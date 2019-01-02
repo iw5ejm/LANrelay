@@ -18,6 +18,16 @@ Link to relay module
  Relay 3  - Pin 4
  Relay 4  - Pin 5 
 ------------------
+
+-----------------------
+Link to 220 V AC check:
+obviously do not lik directly to 220 AC...use a relay!
+pin A0 to ground signify AC OK
+
+Link to battery to read voltage:
+Pin A1
+REMEMBER TO PUT A VOLTAGE DIVIDER! MAX ARDUINO NANO INPUT IS 5 VOLT DC
+---------------
  */
 
 // REMEMBER TO CHANGE IP ADDRESS AND NETWORK CONFIGURATION
