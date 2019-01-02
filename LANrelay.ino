@@ -125,7 +125,7 @@ void setup()
   for(int i = 0; i <= 4; i++)
   {
     pinMode(LedPins[i],OUTPUT); 
-    digitalWrite (LedPins[i],HIGH);
+    digitalWrite (LedPins[i],LOW);
     PinStatus[i]=true;
   }  
 }
@@ -153,7 +153,7 @@ void loop()
       data += 5;
       if (data[0] == ' ') {       
         homePage(); // Return home page 
-        for (int i = 0; i <= 3; i++)digitalWrite(LedPins[i],PinStatus[i+1]);
+        for (int i = 0; i <= 3; i++)digitalWrite(LedPins[i],!PinStatus[i+1]);
       }
 
       // "16" = "?ArduinoPIN1=on ".
