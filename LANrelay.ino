@@ -27,6 +27,7 @@ pin A0 to ground signify AC OK
 Link to battery to read voltage:
 Pin A1
 REMEMBER TO PUT A VOLTAGE DIVIDER! MAX ARDUINO NANO INPUT IS 5 VOLT DC
+modify voltage divide ratio in code, line 41
 ---------------
  */
 
